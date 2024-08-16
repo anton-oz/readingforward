@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --bg-start-hex: #2588f9;
+  --bg-end-hex: #259bf9;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: var(--bg-start-hex);
+  background: linear-gradient(
+      to left,
+      transparent,
+      var(--bg-end-hex)
+    )
+    var(--bg-start-hex)
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
