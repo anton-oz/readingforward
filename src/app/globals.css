@@ -6,8 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --bg-start-hex: #2588f9;
-  --bg-end-hex: #259bf9;
+  --bg-start-hex: #101E39;
+  --bg-end-hex: #3F4A60;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -18,10 +18,14 @@
   }
 } */
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
   color: var(--bg-start-hex);
   background: linear-gradient(
-      to left,
+      to bottom right,
       transparent,
       var(--bg-end-hex)
     )
@@ -33,3 +37,12 @@ body {
     text-wrap: balance;
   }
 }
+
+nav {
+  scroll-snap-align: start;
+}
+
+#divSnap {
+  scroll-snap-align: center;
+}
+

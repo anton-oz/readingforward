@@ -10,7 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         primary: '#25bff9',
-        primary_dark: '#255ff9'
+        primary_dark: '#255ff9',
+        blueski: '#63A9F8',
+        darkBlueski: '#4b7db5'
       },
     },
   },
