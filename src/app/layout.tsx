@@ -26,7 +26,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/readingforward.svg" />
       </head>
       <body className={quicksand.className + "lg:text-[20px] md:text-[16px] sm:text-[14px] text-[10px]"}>
-        <main className="pt-[6em] text-white min-h-screen grid place-items-center items-center">
+        <main className="pt-[6em] min-h-screen grid place-items-center items-center">
           <Nav />
           {children}
         </main>

@@ -5,8 +5,8 @@ import NavLinks from "./NavLinks";
 export default function Nav() {
     
     return (
-        <nav className="absolute top-0 w-full p-3 flex justify-start align-center text-white">
-                <Link href="/" className="transition-all duration-150 hover:text-blueski hover:cursor-pointer">
+        <nav className="absolute top-0 w-full pt-[3em] flex justify-center align-center">
+                <Link href="/" className="transition-all duration-15 hover:cursor-pointer hover:text-darkBlueski">
                     <ReadingForwardLogo animation={true}/>
                 </Link>
             <ul className="ml-4 self-center flex">

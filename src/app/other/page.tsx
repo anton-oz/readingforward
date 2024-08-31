@@ -14,7 +14,7 @@ export default function other() {
                 </div>
                 <div className="h-full flex flex-col justify-between pb-[3em]">
                 <div className="grid place-items-center">
-                    <img src="https://placehold.co/200x200" alt="placeholder img" className="rounded-xl" />
+                    {/* <img src="https://placehold.co/200x200" alt="placeholder img" className="rounded-xl" /> */}
                 </div>
                 <div className="h-flex flex-col justify-center text-center p-4 rounded-lg border-[0.2em] border-slate-500">
                     <h2 className="text-6xl mb-4">What I do:</h2>

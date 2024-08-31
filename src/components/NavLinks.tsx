@@ -20,13 +20,13 @@ export default function NavLinks() {
                     {pathname === `/${link.toLocaleLowerCase()}`
                     ? (
                         <span className="relative after:content-[''] after:block after:w-3/4 after:left-[12.5%] after:h-[2px] after:bg-current after:absolute after:-bottom-[2px]">
-                            <Link href={`/${link.toLocaleLowerCase()}`} className="p-2 transition-all duration-150 rounded-md hover:bg-darkBlueski">
+                            <Link href={`/${link.toLocaleLowerCase()}`} className="p-2 transition-all duration-150 rounded-md hover:bg-blueski hover:text-white">
                                 {link}
                             </Link>
                         </span>
                     )
                     : (
-                        <Link href={`/${link.toLocaleLowerCase()}`} className="p-2  transition-all duration-150 rounded-md hover:bg-darkBlueski">
+                        <Link href={`/${link.toLocaleLowerCase()}`} className="p-2  transition-all duration-150 rounded-md  hover:bg-blueski hover:text-white">
                             {link}
                         </Link>
                     )}

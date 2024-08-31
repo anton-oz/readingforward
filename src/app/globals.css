@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --bg-start-hex: #101E39;
-  --bg-end-hex: #3F4A60;
+  --bg-end-hex: #3F4A60; */
+  /* Dev Vars */
+  --bg-start: #fff;
+  --text-color: #4b7db5;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -23,13 +26,14 @@ html {
 }
 
 body {
-  color: var(--bg-start-hex);
-  background: linear-gradient(
+  /* color: var(--bg-start); */
+  color: var(--text-color)
+  /* background: linear-gradient(
       to bottom right,
       transparent,
       var(--bg-end-hex)
     )
-    var(--bg-start-hex)
+    var(--bg-start-hex) */
 }
 
 @layer utilities {
@@ -45,4 +49,3 @@ nav {
 #divSnap {
   scroll-snap-align: center;
 }
-
