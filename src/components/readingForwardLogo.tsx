@@ -9,6 +9,7 @@ type props = {
 
 export const ReadingForwardLogo: FC<props> = ({ animation }) => {
 
+    const dev = process.env.NEXT_PUBLIC_DEV === '1';
 
     if (animation) {
         return (
@@ -24,7 +25,7 @@ export const ReadingForwardLogo: FC<props> = ({ animation }) => {
                     animate('#logoName', { transform: 'translateX(0)' }, { duration: 0.5 })
                 }}
             >
-                <Image id="logoImage" src="/readingforward/readingforward.svg" width={40} height={40} className="mx-[0.4em] text-blueski" alt="Reading Forward logo" />
+                <Image id="logoImage" src={dev ? '/readingforward.svg' : "/readingforward/readingforward.svg"}  width={40} height={40} className="mx-[0.4em] text-blueski" alt="Reading Forward logo" />
                 <b id="logoName" className="text-2xl grid items-center">
                     Reading Forward
                 </b>
