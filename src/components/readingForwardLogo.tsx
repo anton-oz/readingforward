@@ -24,7 +24,7 @@ export const ReadingForwardLogo: FC<props> = ({ animation }) => {
                     animate('#logoName', { transform: 'translateX(0)' }, { duration: 0.5 })
                 }}
             >
-                <Image id="logoImage" src="/readingforward.svg" width={40} height={40} className="mx-[0.4em] text-blueski" alt="Reading Forward logo" />
+                <Image id="logoImage" src="/readingforward/readingforward.svg" width={40} height={40} className="mx-[0.4em] text-blueski" alt="Reading Forward logo" />
                 <b id="logoName" className="text-2xl grid items-center">
                     Reading Forward
                 </b>
