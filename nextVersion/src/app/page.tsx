@@ -1,3 +1,5 @@
+import {FC} from 'react'
+
 import { ReadingForwardLogo } from "@/components/readingForwardLogo";
 
 import Book from "@/components/Book";
@@ -14,3 +16,4 @@ export default function Home() {
       </section>
   );
 }
+
