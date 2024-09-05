@@ -39,7 +39,7 @@ export default function RootLayout({
           "lg:text-[20px] md:text-[16px] sm:text-[14px] text-[10px]"
         }
       >
-        <main className="h-screen grid place-items-center items-center">
+        <main className="h-screen grid grid-rows-3 place-items-center items-center">
           <Nav />
           {children}
         </main>
