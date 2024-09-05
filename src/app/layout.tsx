@@ -36,10 +36,10 @@ export default function RootLayout({
       <body
         className={
           quicksand.className +
-          "lg:text-[20px] md:text-[16px] sm:text-[14px] text-[10px]"
+          "lg:text-[20px] md:text-[16px] sm:text-[14px] text-[10px] bg-slate-100"
         }
       >
-        <main className="h-screen grid grid-rows-3 place-items-center items-center">
+        <main className="h-screen grid grid-rows-[auto,1fr] place-items-center items-center">
           <Nav />
           {children}
         </main>

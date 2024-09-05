@@ -3,37 +3,11 @@
 @tailwind utilities;
 
 :root {
-  /* --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --bg-start-hex: #101E39;
-  --bg-end-hex: #3F4A60; */
-  /* Dev Vars */
-  --bg-start: #fff;
   --text-color: #4b7db5;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
-html {
-  scroll-snap-type: y mandatory;
-}
-
 body {
-  /* color: var(--bg-start); */
-  color: var(--text-color)
-  /* background: linear-gradient(
-      to bottom right,
-      transparent,
-      var(--bg-end-hex)
-    )
-    var(--bg-start-hex) */
+  color: var(--text-color);
 }
 
 @layer utilities {
@@ -42,10 +16,8 @@ body {
   }
 }
 
-/* nav {
-  scroll-snap-align: start;
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
-
-#divSnap {
-  scroll-snap-align: center;
-} */
