@@ -4,6 +4,7 @@
 
 :root {
   --text-color: #4b7db5;
+  --darker: #3a618e;
 }
 
 body {
@@ -20,4 +21,24 @@ body {
   :root {
     --radius: 0.5rem;
   }
+}
+
+/* Scrollbar */
+.custom-scrollbar [data-radix-scroll-area-viewport] {
+  scrollbar-width: thin !important;
+  scrollbar-color: hsl(215.4 16.3% 46.9%) transparent !important;
+}
+
+.custom-scrollbar [data-radix-scroll-area-viewport]::-webkit-scrollbar {
+  width: 8px !important;
+  display: block !important;
+}
+
+.custom-scrollbar [data-radix-scroll-area-viewport]::-webkit-scrollbar-thumb {
+  background-color: hsl(215.4 16.3% 46.9%) !important;
+  border-radius: 4px !important;
+}
+
+.custom-scrollbar [data-radix-scroll-area-viewport]::-webkit-scrollbar-track {
+  background-color: transparent !important;
 }

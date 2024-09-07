@@ -14,6 +14,7 @@ const config: Config = {
         primary_dark: "#255ff9",
         blueski: "#4b7db5",
         darkBlueski: "#306096",
+        darkerBlueski: "#3a618e",
       },
       borderRadius: {
         lg: "var(--radius)",

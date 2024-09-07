@@ -5,6 +5,8 @@ import "./globals.css";
 
 import Nav from "@/components/Nav";
 
+import Link from "next/link";
+
 const quicksand = Quicksand({
   subsets: ["latin"],
   weight: "400",
@@ -36,13 +38,23 @@ export default function RootLayout({
       <body
         className={
           quicksand.className +
-          "lg:text-[20px] md:text-[16px] sm:text-[14px] text-[10px] bg-slate-100"
+          "lg:text-[20px] md:text-[16px] sm:text-[14px] text-[10px] grid grid-rows-[1fr,auto] h-screen bg-blue-50"
         }
       >
-        <main className="h-screen grid grid-rows-[auto,1fr] place-items-center items-center">
+        <main className="h-full grid grid-rows-[auto,1fr] place-items-center items-center">
           <Nav />
           {children}
         </main>
+        <footer className="sticky bottom-0 flex justify-end items-center p-2 border-t-2 border-t-zinc-800 bg-blue-50 text-darkerBlueski font-extralight">
+          <p>Created by</p>
+          <Link
+            href="https://anton-oz.github.io/ptflio/"
+            target="_blank"
+            className="mx-1 hover:underline underline-offset-4 hover:text-black"
+          >
+            Anton Osland
+          </Link>
+        </footer>
       </body>
     </html>
   );

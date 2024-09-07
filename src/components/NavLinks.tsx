@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function NavLinks() {
   let pathname = usePathname();
 
-  const links = ["FAQ", "About", "Contact", "Other"];
+  const links = ["About", "FAQ", "Contact", "Other"];
 
   return (
     <>
