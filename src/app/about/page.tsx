@@ -1,15 +1,24 @@
 import { ScrollArea, ScrollBar } from "@/components/ui/ScrollArea";
+import { MoveDown, MoveUp } from "lucide-react";
+import Link from "next/link";
 
 export default function AboutMe() {
   return (
-    <section className="w-full h-full max-h-full grid grid-cols-1  bg-blue-50">
+    <section
+      id="scrollContainer"
+      className="w-full h-[80vh] overflow-y-auto snap-y snap-mandatory bg-blue-50"
+      style={{ scrollBehavior: "smooth" }}
+    >
       {/* first column */}
-      <div className="flex flex-col items-center justify-center p-4">
-        <h2 className="font-bold text-5xl mb-5 bg-darkBlueski text-white p-2 rounded-md">
+      <div
+        id="structuredLiteracy"
+        className="h-fit md:h-[80vh] snap-start flex flex-col items-center justify-center p-4"
+      >
+        <h2 className="w-full md:w-[60%] text-center font-bold text-4xl md:text-5xl mb-5 bg-darkBlueski text-white p-2 rounded-md">
           What is Structured Literacy?
         </h2>
         <ScrollArea
-          className="h-96 w-[60%] border border-zinc-500 rounded-md bg-slate-50 text-2xl custom-scrollbar"
+          className="h-[20em] w-full md:w-[60%] border-2 border-zinc-500 rounded-md bg-slate-50 text-2xl custom-scrollbar"
           type="always"
         >
           <div className="space-y-4 p-4">
@@ -59,14 +68,23 @@ export default function AboutMe() {
           </div>
           <ScrollBar />
         </ScrollArea>
+        <Link href="#ortonGillingham" className="relative">
+          <div className="absolute left-[35vw] bottom-[25vh] transition-all duration-200 hover:scale-105">
+            <MoveDown size={100} className="" />
+            <p className="w-max ">scroll for more</p>
+          </div>
+        </Link>
       </div>
       {/* second column */}
-      <div className="flex flex-col items-center justify-center p-4">
-        <h2 className="font-bold text-5xl mb-5 bg-darkBlueski text-white p-2 rounded-md">
+      <div
+        id="ortonGillingham"
+        className="h-full md:h-[80vh] snap-start flex flex-col items-center justify-center p-4"
+      >
+        <h2 className="w-[60%] text-center font-bold text-5xl mb-5 bg-darkBlueski text-white p-2 rounded-md">
           What is Orton Gillingham?
         </h2>
         <ScrollArea
-          className="h-96 w-[60%] border border-zinc-500 rounded-md bg-slate-50 text-2xl custom-scrollbar"
+          className="h-96 w-[60%] border-2 border-zinc-500 rounded-md bg-slate-50 text-2xl custom-scrollbar"
           type="always"
         >
           <div className="space-y-4 p-4">
@@ -140,6 +158,12 @@ export default function AboutMe() {
           </div>
           <ScrollBar />
         </ScrollArea>
+        <Link href="#structuredLiteracy" className="relative">
+          <div className="absolute left-[35vw] bottom-[25vh] transition-all duration-200 hover:scale-105">
+            <MoveUp size={100} />
+            <p className="w-full text-center">to top</p>
+          </div>
+        </Link>
       </div>
     </section>
   );

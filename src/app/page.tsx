@@ -15,11 +15,11 @@ export default function Home() {
           Advancing students on their literacy journey through personalized
           instruction and unwavering support
         </p>
-        <div className="w-full h-full flex justify-center items-start">
+        <div className="w-full h-full flex justify-center items-start pb-3">
           <LearnMoreButton />
         </div>
       </div>
-      <div className="h-full grid grid-cols-[auto,1fr] items-center gap-10 p-6 bg-blue-50">
+      <div className="h-full grid md:grid-cols-[auto,1fr] items-center gap-10 p-6 bg-blue-50">
         <div className="h-fit flex flex-col items-center  bg-white p-4 rounded-md border border-zinc-600">
           <Image
             src={dev ? "/bookflip3.gif" : "/readingforward/bookflip3.gif"}
@@ -31,7 +31,7 @@ export default function Home() {
           />
           <p className="font-medium text-4xl">Turning Pages, Igniting Minds</p>
         </div>
-        <div className=" h-[305.62px] w-full grid items-center place-items-center bg-white border-zinc-600 border rounded-md"></div>
+        <div className="hidden md:block h-[305.62px] w-full grid items-center place-items-center bg-white border-zinc-600 border rounded-md"></div>
       </div>
     </section>
   );

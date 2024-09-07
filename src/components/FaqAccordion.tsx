@@ -5,6 +5,15 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
 export default function FaqAccordion() {
   interface InfoObj {
     title: string;
@@ -60,7 +69,11 @@ export default function FaqAccordion() {
             {item.title}
           </AccordionTrigger>
           <AccordionContent className="text-2xl">
-            {item.content}
+            <Card className="p-4">
+              <CardContent className="text-left p-0">
+                {item.content}
+              </CardContent>
+            </Card>
           </AccordionContent>
         </AccordionItem>
       ))}
