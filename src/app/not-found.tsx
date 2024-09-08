@@ -9,7 +9,7 @@ export default function notFound() {
         <p className="my-4">Could not find requested page.</p>
         <Link
           href="/"
-          className="bg-darkBlueski text-white p-2 border border-white rounded-md hover:bg-slate-100 hover:border-black hover:text-blueski transition-all duration-300"
+          className="bg-blueski text-white p-2 border border-white rounded-md hover:bg-darkBlueski transition-all duration-300"
         >
           Home
         </Link>

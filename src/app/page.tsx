@@ -9,18 +9,18 @@ export default function Home() {
   const dimension = 300;
 
   return (
-    <section className="h-full w-full grid auto-rows-[min-content, 1fr] text-center bg-white">
-      <div className="max-h-fit w-full bg-darkBlueski grid items-center place-items-center border-b-2 border-b-zinc-800">
-        <p className="w-[70%] font-bold leading-normal text-4xl text-white">
+    <section className="h-full w-full flex flex-col text-center bg-white">
+      <div className="h-min w-full p-4 bg-darkBlueski grid auto-rows-min items-center place-items-center border-b-2 border-b-zinc-800">
+        <p className="h-min w-full md:w-[70%] font-bold leading-normal text-4xl text-white">
           Advancing students on their literacy journey through personalized
           instruction and unwavering support
         </p>
-        <div className="w-full h-full flex justify-center items-start pb-3">
+        <div className="w-full h-fit flex justify-center items-start py-3">
           <LearnMoreButton />
         </div>
       </div>
-      <div className="h-full grid md:grid-cols-[auto,1fr] items-center gap-10 p-6 bg-blue-50">
-        <div className="h-fit flex flex-col items-center  bg-white p-4 rounded-md border border-zinc-600">
+      <div className="flex-1 grid md:grid-cols-[auto,1fr] items-center gap-10 p-6 bg-blue-50">
+        <div className=" flex flex-col items-center bg-white p-4 rounded-md border border-zinc-600">
           <Image
             src={dev ? "/bookflip3.gif" : "/readingforward/bookflip3.gif"}
             width={dimension}
