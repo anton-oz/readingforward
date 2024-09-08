@@ -7,6 +7,16 @@ export default function Home() {
   const bookFlipImgDimensions = 300;
   const placeholderDimensions = 300;
 
+  const images = [];
+
+  for (let i = 1; i < 6; i++) {
+    if (dev) {
+      images.push(`/tutorPhotos/${i}-tutor-photo.jpg`);
+    } else {
+      images.push(`/readingforward/tutorPhotos/${i}-tutor-photo.jpg`);
+    }
+  }
+
   return (
     <section className="h-full w-full flex flex-col text-center bg-white">
       <div className="h-min w-full p-4 bg-darkBlueski grid auto-rows-min items-center place-items-center border-b-2 border-b-zinc-800">
@@ -18,15 +28,19 @@ export default function Home() {
           <LearnMoreButton />
         </div>
       </div>
-      <div className="flex-1 gap-10 bg-blue-50 w-full">
-        <Image
-          src="https://placehold.co/350"
-          width={placeholderDimensions}
-          height={placeholderDimensions}
-          objectFit="contain"
-          alt="placeholder image"
-          unoptimized={true}
-        />
+      <div className="flex-1 flex bg-blue-50 h-full overflow-hidden">
+        {images.map((item, i) => (
+          <div className="flex-shrink-0 relative w-4/5 md:w-3/12 h-full  animate-scroll">
+            <Image
+              key={i}
+              src={item}
+              fill
+              alt="placeholder image"
+              unoptimized={true}
+              className="object-contain"
+            />
+          </div>
+        ))}
       </div>
     </section>
   );

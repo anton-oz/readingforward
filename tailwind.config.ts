@@ -22,6 +22,13 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        // for landing page image container
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        // for accordion
         "accordion-down": {
           from: {
             height: "0",
@@ -40,6 +47,9 @@ const config: Config = {
         },
       },
       animation: {
+        // for landing page image container
+        scroll: "scroll 30s ease-in-out infinite",
+        // for accordion
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

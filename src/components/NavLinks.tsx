@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function NavLinks() {
   let pathname = usePathname();
 
-  const links = ["About", "FAQ", "Contact", "Other"];
+  const links = ["About", "FAQ"];
 
   return (
     <>
@@ -15,7 +15,7 @@ export default function NavLinks() {
             <span className="relative after:content-[''] after:block after:w-3/4 after:left-[12.5%] after:h-[2px] after:bg-current after:absolute after:-bottom-[2px]">
               <Link
                 href={`/${link.toLocaleLowerCase()}`}
-                className="p-2 transition-all duration-150 rounded-md hover:bg-blueski hover:text-white"
+                className="p-2 transition-all duration-150 rounded-md hover:bg-darkBlueski hover:text-white"
               >
                 {link}
               </Link>
