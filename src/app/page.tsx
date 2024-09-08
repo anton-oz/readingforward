@@ -5,7 +5,7 @@ export default function Home() {
   const dev = process.env.NEXT_PUBLIC_DEV;
 
   const bookFlipImgDimensions = 300;
-  const personalImgDimesnions = 250;
+  const placeholderDimensions = 300;
 
   return (
     <section className="h-full w-full flex flex-col text-center bg-white">
@@ -18,29 +18,15 @@ export default function Home() {
           <LearnMoreButton />
         </div>
       </div>
-      <div className="flex-1 grid md:grid-cols-[auto,1fr] items-center gap-10 p-6 bg-blue-50">
-        {/* <div className=" flex flex-col items-center bg-white p-4 rounded-md border border-zinc-600">
-          <Image
-            src={dev ? "/bookflip3.gif" : "/readingforward/bookflip3.gif"}
-            width={bookFlipImgDimensions}
-            height={bookFlipImgDimensions}
-            alt="book page flipping gif"
-            unoptimized={true}
-            className="mb-2 h-auto"
-          />
-          <p className="font-medium text-4xl">Turning Pages, Igniting Minds</p>
-        </div>
-        <div className="hidden h-[305.62px] w-full p-4 md:flex items-center justify-start bg-white border-zinc-600 border rounded-md">
-          <Image
-            src="https://placehold.co/200"
-            width={personalImgDimesnions}
-            height={personalImgDimesnions}
-            alt="Image of Nativida"
-            unoptimized={true}
-            className="rounded-md"
-          />
-          <p className="h-full p-4">Hi! I'm Nativida</p>
-        </div> */}
+      <div className="flex-1 gap-10 bg-blue-50 w-full">
+        <Image
+          src="https://placehold.co/350"
+          width={placeholderDimensions}
+          height={placeholderDimensions}
+          objectFit="contain"
+          alt="placeholder image"
+          unoptimized={true}
+        />
       </div>
     </section>
   );
