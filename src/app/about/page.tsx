@@ -68,7 +68,7 @@ export default function AboutMe() {
           </div>
           <ScrollBar />
         </ScrollArea>
-        <Link href="#ortonGillingham" className="hidden md:relative">
+        <Link href="#ortonGillingham" className="hidden md:block md:relative">
           <div className="absolute left-[35vw] bottom-[25vh] transition-all duration-200 hover:scale-105">
             <MoveDown size={100} className="" />
             <p className="w-max ">scroll for more</p>
@@ -158,7 +158,10 @@ export default function AboutMe() {
           </div>
           <ScrollBar />
         </ScrollArea>
-        <Link href="#structuredLiteracy" className="hidden md:relative">
+        <Link
+          href="#structuredLiteracy"
+          className="hidden md:block md:relative"
+        >
           <div className="absolute left-[35vw] bottom-[25vh] transition-all duration-200 hover:scale-105">
             <MoveUp size={100} />
             <p className="w-full text-center">to top</p>

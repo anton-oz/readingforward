@@ -23,7 +23,7 @@ export default function NavLinks() {
           ) : (
             <Link
               href={`/${link.toLocaleLowerCase()}`}
-              className="p-2  transition-all duration-150 rounded-md  hover:bg-blueski hover:text-white"
+              className="p-2  transition-all duration-150 rounded-md  hover:bg-darkBlueski hover:text-white"
             >
               {link}
             </Link>

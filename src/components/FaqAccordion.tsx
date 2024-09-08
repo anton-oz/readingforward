@@ -61,11 +61,11 @@ export default function FaqAccordion() {
     <Accordion
       type="single"
       collapsible
-      className="w-full h-full row-start-2 p-4 m-2 "
+      className="w-full h-full row-start-2 p-4 "
     >
       {info.map((item, i) => (
         <AccordionItem value={`item-${i}`} key={i}>
-          <AccordionTrigger className="text-4xl font-normal decoration-2 pl-4 underline-offset-4">
+          <AccordionTrigger className="text-4xl text-left font-normal decoration-2 pl-4 underline-offset-4">
             {item.title}
           </AccordionTrigger>
           <AccordionContent className="text-2xl">
