@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex-1 grid md:grid-cols-[auto,1fr] items-center gap-10 p-6 bg-blue-50">
-        <div className=" flex flex-col items-center bg-white p-4 rounded-md border border-zinc-600">
+        {/* <div className=" flex flex-col items-center bg-white p-4 rounded-md border border-zinc-600">
           <Image
             src={dev ? "/bookflip3.gif" : "/readingforward/bookflip3.gif"}
             width={bookFlipImgDimensions}
@@ -40,7 +40,7 @@ export default function Home() {
             className="rounded-md"
           />
           <p className="h-full p-4">Hi! I'm Nativida</p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
