@@ -30,9 +30,11 @@ export default function Home() {
       </div>
       <div className="flex-1 flex bg-blue-50 h-full overflow-hidden">
         {images.map((item, i) => (
-          <div className="flex-shrink-0 relative w-4/5 md:w-3/12 h-full  animate-scroll">
+          <div
+            className="flex-shrink-0 relative w-4/5 md:w-3/12 h-full animate-scroll"
+            key={i}
+          >
             <Image
-              key={i}
               src={item}
               fill
               alt="placeholder image"

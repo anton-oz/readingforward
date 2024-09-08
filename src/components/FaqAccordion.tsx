@@ -106,10 +106,11 @@ export default function FaqAccordion() {
               <CardContent className="text-left space-y-4 p-0">
                 {Array.isArray(item.content)
                   ? item.content.map((item, i) =>
+                      // if there is a subarray in item.content, map to a ul
                       Array.isArray(item) ? (
                         <ul className="list-disc pl-6 space-y-2">
                           {item.map((item, i) => (
-                            <li>{item}</li>
+                            <li key={i}>{item}</li>
                           ))}
                         </ul>
                       ) : (
