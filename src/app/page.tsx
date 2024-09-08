@@ -1,6 +1,4 @@
 import Image from "next/image";
-
-import { ReadingForwardLogo } from "@/components/readingForwardLogo";
 import { LearnMoreButton } from "@/components/LearnMoreButton";
 
 export default function Home() {

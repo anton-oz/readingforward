@@ -7,9 +7,10 @@ type props = {
   animation: boolean;
 };
 
-export const ReadingForwardLogo: FC<props> = ({ animation }) => {
+// export const ReadingForwardLogo: FC<props> = ({ animation }) => {
+export default function ReadingForwardLogo() {
   const dev = process.env.NEXT_PUBLIC_DEV === "1";
-
+  const animation = true;
   if (animation) {
     return (
       <div
@@ -79,4 +80,4 @@ export const ReadingForwardLogo: FC<props> = ({ animation }) => {
       </div>
     );
   }
-};
+}

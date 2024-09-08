@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ReadingForwardLogo } from "./readingForwardLogo";
+import ReadingForwardLogo from "./readingForwardLogo";
 import NavLinks from "./NavLinks";
 
 export default function Nav() {
@@ -9,7 +9,7 @@ export default function Nav() {
         href="/"
         className="transition-all duration-15 hover:cursor-pointer hover:text-darkBlueski"
       >
-        <ReadingForwardLogo animation={true} />
+        <ReadingForwardLogo />
       </Link>
       <ul className="hidden md:flex ml-4 self-center">
         <NavLinks />
