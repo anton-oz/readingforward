@@ -22,21 +22,6 @@ export default function FaqAccordion() {
 
   const info: InfoObj[] = [
     {
-      title: "Who Am I?",
-      content:
-        "With a BA in Studio Art from Gustavus Adolphus College and licenses in Elementary Education and K-12 Reading from Augsburg College and Hamline University respectively, Nativida taught grades 2-6 in Minneapolis Public Schools. Motivated by a passion for reading accessibility, she pursued Orton Gillingham training. Now, she empowers learners at both private settings and Groves Learning Organization.",
-    },
-    {
-      title: "What I do",
-      content:
-        "The goal is simple: to support students on their literacy journey with structured and personalized instruction. I believe in giving you the tools and guidance you need to understand language deeply. With tailored strategies and steady support, I'll assist you in understanding sounds and word patterns, improving your reading and writing skills with accuracy and confidence. Together, we move forward, unlocking the boundless possibilities that literacy affords.",
-    },
-    {
-      title: "What I offer",
-      content:
-        "As an educator, my focus lies in teaching reading, spelling, and writing using Structured Literacy. What's truly notable about Structured Literacy is its universal effectiveness, benefiting students at every level, whether they're dyslexic, have other diverse learning needs, catching up or excelling. With me, students receive tailored, one-on-one Orton Gillingham instruction in reading, writing, and spelling, ensuring personalized support for their unique journey.",
-    },
-    {
       title: "What is Structured Literacy?",
       content: [
         "Structured Literacy is an educational approach aimed at teaching literacy skills in a systematic and explicit manner. It is designed to help individuals, particularly those with dyslexia or other language-based learning differences, develop strong foundational skills in reading, writing, and spelling.",
@@ -108,7 +93,7 @@ export default function FaqAccordion() {
                   ? item.content.map((item, i) =>
                       // if there is a subarray in item.content, map to a ul
                       Array.isArray(item) ? (
-                        <ul className="list-disc pl-6 space-y-2">
+                        <ul className="list-disc pl-6 space-y-2" key={i}>
                           {item.map((item, i) => (
                             <li key={i}>{item}</li>
                           ))}

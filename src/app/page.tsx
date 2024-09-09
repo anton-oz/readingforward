@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { LearnMoreButton } from "@/components/LearnMoreButton";
+import Marquee from "@/components/ui/Marquee";
 
 export default function Home() {
   const dev = process.env.NEXT_PUBLIC_DEV;
@@ -8,6 +9,8 @@ export default function Home() {
   const placeholderDimensions = 300;
 
   const images = [];
+
+  const test = ["1", "2", "3", "4", "5"];
 
   for (let i = 1; i < 6; i++) {
     if (dev) {
@@ -28,8 +31,8 @@ export default function Home() {
           <LearnMoreButton />
         </div>
       </div>
-      <div className="flex-1 flex bg-blue-50 h-full overflow-hidden">
-        {images.map((item, i) => (
+      <div className="flex-1 flex bg-blue-50 h-full w-full overflow-hidden">
+        {/* {images.map((item, i) => (
           <div
             className="flex-shrink-0 relative w-4/5 md:w-3/12 h-full animate-scroll"
             key={i}
@@ -42,7 +45,10 @@ export default function Home() {
               className="object-contain"
             />
           </div>
-        ))}
+        ))} */}
+        {/* <div className="flex-shrink-0 w-full"> */}
+        <Marquee items={images} />
+        {/* </div> */}
       </div>
     </section>
   );

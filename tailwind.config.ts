@@ -22,6 +22,15 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        // for marquee component
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
         // for landing page image container
         scroll: {
           "0%": { transform: "translateX(0)" },
@@ -47,6 +56,9 @@ const config: Config = {
         },
       },
       animation: {
+        // for marquee component
+        marquee: "marquee 40s linear infinite",
+        marquee2: "marquee2 40s linear infinite",
         // for landing page image container
         scroll: "scroll 30s ease-in-out infinite",
         // for accordion

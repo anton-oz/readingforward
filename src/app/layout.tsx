@@ -42,7 +42,7 @@ export default function RootLayout({
         }
       >
         <Nav />
-        <main className="flex-grow h-full max-w-screen grid place-items-center items-center overflow-y-scroll">
+        <main className="flex-grow h-full max-w-screen grid place-items-center items-center">
           {children}
         </main>
         <footer className="sticky bottom-0 flex justify-end items-center p-2 border-t-2 border-t-zinc-800 bg-blue-100 text-darkerBlueski font-extralight">
