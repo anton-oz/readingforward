@@ -3,16 +3,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import { Mail, MoveHorizontal } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Carousel } from "@trendyol-js/react-carousel";
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function AboutMe() {
   const placeholderDimensions = 150;
@@ -47,7 +46,7 @@ export default function AboutMe() {
             unoptimized
             className="object-cover rounded-md h-[150px] w-[150px] md:w-[200px] md:h-[200px] "
           />
-          <div className="flex flex-col justify-center items-center pt-3">
+          <div className="flex flex-col justify-center items-center pt-3  text-xl">
             Contact:
             <Link
               href="mailto:test@example.com"
@@ -58,24 +57,30 @@ export default function AboutMe() {
             </Link>
           </div>
         </div>
-        <div className="overflow-hidden w-full h-full">
-          <Carousel
-            show={1}
-            infinite
-            slide={1}
-            swiping={true}
-            className="w-[60%]"
-          >
-            {carouselCards.map((item, i) => (
-              <Card key={i} className="h-[50vh] md:h-full">
-                <CardHeader>
-                  <CardTitle className="text-4xl">{item.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-xl">{item.content}</p>
-                </CardContent>
-              </Card>
-            ))}
+        <div className="overflow-hidden w-full h-full flex flex-col items-center justify-center">
+          {/* <div className="visible sm:invisible flex flex-col justify-center items-center">
+            <MoveHorizontal size={50} strokeWidth={1} />
+            <p>Swipe for more</p>
+          </div> */}
+          <Carousel className="w-full sm:w-[90%] h-full">
+            <CarouselContent>
+              {carouselCards.map((item, i) => (
+                <CarouselItem key={i}>
+                  <div className="p-1">
+                    <Card>
+                      <CardHeader>
+                        <CardTitle className="text-4xl">{item.title}</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-2xl">{item.content}</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="invisible sm:visible" />
+            <CarouselNext className="invisible sm:visible" />
           </Carousel>
         </div>
       </div>

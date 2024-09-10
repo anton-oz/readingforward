@@ -31,7 +31,7 @@ export default function Home() {
           <LearnMoreButton />
         </div>
       </div>
-      <div className="flex-1 flex bg-blue-50 h-full w-full overflow-hidden">
+      <div className="flex-1 flex bg-blue-50 w-full overflow-hidden">
         {/* {images.map((item, i) => (
           <div
             className="flex-shrink-0 relative w-4/5 md:w-3/12 h-full animate-scroll"
