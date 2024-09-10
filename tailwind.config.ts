@@ -57,8 +57,8 @@ const config: Config = {
       },
       animation: {
         // for marquee component
-        marquee: "marquee 40s linear infinite",
-        marquee2: "marquee2 40s linear infinite",
+        marquee: "marquee 50s linear infinite",
+        marquee2: "marquee2 50s linear infinite",
         // for landing page image container
         scroll: "scroll 30s ease-in-out infinite",
         // for accordion

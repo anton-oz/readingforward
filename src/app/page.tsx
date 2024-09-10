@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <section className="h-full w-full flex flex-col text-center bg-white">
       <div className="h-min w-full p-4 bg-darkBlueski grid auto-rows-min items-center place-items-center border-b-2 border-b-zinc-800">
-        <p className="h-min w-full md:w-[70%] font-bold leading-normal text-4xl text-white">
+        <p className="h-min w-full md:w-[70%] font-bold leading-normal text-xl sm:text-4xl text-white">
           Advancing students on their literacy journey through personalized
           instruction and unwavering support
         </p>

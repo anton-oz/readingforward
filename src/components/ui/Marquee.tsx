@@ -12,20 +12,20 @@ export default function Marquee({ items }: { items: string[] }) {
               key={i}
               src={item}
               alt="placeholder image"
-              className="object-contain max-h-[416px] w-full"
+              className="object-contain max-h-[450px] w-full"
             />
           );
         })}
       </div>
 
-      <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-12 flex w-full h-full">
+      <div className="absolute top-0 animate-marquee2 whitespace-nowrap flex w-full h-full">
         {items.map((item, i) => {
           return (
             <img
               key={i}
               src={item}
               alt="placeholder image"
-              className="object-contain max-h-[416px] w-full"
+              className="object-contain max-h-[450px] w-full"
             />
           );
         })}
