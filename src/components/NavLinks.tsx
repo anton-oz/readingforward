@@ -6,7 +6,6 @@ export default function NavLinks({ mobile }: { mobile: boolean }) {
   let pathname = usePathname();
 
   const links = ["About", "FAQ"];
-  console.log(mobile);
   if (mobile) {
     return (
       <>

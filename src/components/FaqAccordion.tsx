@@ -33,7 +33,7 @@ export default function FaqAccordion() {
           "Syllable instruction: Teaching how to recognize and decode syllables in words, which aids in pronunciation and spelling.",
           "Morphology: Teaching the meaningful parts of words, such as prefixes, suffixes, and root words, to enhance vocabulary and decoding skills.",
           "Syntax: Teaching the structure and organization of sentences, including grammar rules and sentence construction.",
-          "emantics: Teaching the meaning of words and sentences, including comprehension strategies and vocabulary development.",
+          "Semantics: Teaching the meaning of words and sentences, including comprehension strategies and vocabulary development.",
         ],
         " Structured literacy instruction is often systematic, meaning it follows a logical sequence of skills progression, and explicit, meaning concepts are taught directly and clearly. This approach aims to provide struggling readers with the necessary skills and strategies to become proficient readers and writers.",
       ],

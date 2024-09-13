@@ -18,11 +18,11 @@ export default function Nav() {
       >
         <ReadingForwardLogo />
       </Link>
-      <ul className="hidden md:flex ml-4 self-center">
+      <ul className="hidden sm:flex ml-4 self-center">
         <NavLinks mobile={false} />
       </ul>
       {/* Hamburger Menu Button */}
-      <div className="sm:hidden">
+      <div className="visible sm:invisible">
         <button
           onClick={toggleMenu}
           className=" p-2 bg-[#3a618e] text-white rounded-sm shadow-lg focus:outline-none focus:ring-2 focus:ring-[#3a618e] w-10 h-10 flex items-center justify-center"

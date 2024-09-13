@@ -30,14 +30,14 @@ export default function AboutMe() {
     {
       title: "What I offer",
       content:
-        "As an educator, my focus lies in teaching reading, spelling, and writing using Structured Literacy. What's truly notable about Structured Literacy is its universal effectiveness, benefiting students at every level, whether they're dyslexic, have other diverse learning needs, catching up or excelling. With me, students receive tailored, one-on-one Orton Gillingham instruction in reading, writing, and spelling, ensuring personalized support for their unique journey.",
+        "As an educator, my focus lies in teaching reading, spelling, and writing using Structured Literacy. What's notable about Structured Literacy is its universal effectiveness, benefiting students at every level, whether they're dyslexic, have other diverse learning needs, catching up or excelling. With me, students receive tailored, one-on-one Orton Gillingham instruction in reading, writing, and spelling, ensuring personalized support for their unique journey.",
     },
   ];
 
   return (
     <section className="w-full h-full bg-white p-4 flex items-start justify-center ">
       <div className="w-full md:w-[70%] grid grid-rows-[auto,1fr] space-y-4">
-        <div className="flex justify-center items-center w-full space-x-6">
+        <div className="flex justify-center items-start w-full space-x-3 sm:space-x-6">
           <Image
             src="https://placehold.co/250"
             height={placeholderDimensions}
@@ -46,39 +46,41 @@ export default function AboutMe() {
             unoptimized
             className="object-cover rounded-md h-[150px] w-[150px] md:w-[200px] md:h-[200px] "
           />
-          <div className="flex flex-col justify-center items-start pt-3  text-xl">
+          <div className="h-full sm:h-[80%] flex flex-col justify-around items-start text-xl">
             <div>
-              <h2 className="text-2xl font-medium">Nativida Osland</h2>
-              <p className="font-light">Orton Gillingham Reading Specialist</p>
+              <h2 className="text-lg sm:text-2xl font-medium">
+                Nativida Osland
+              </h2>
+              <p className="text-sm sm:text-base font-light text-wrap w-52 sm:w-full">
+                Certified Orton Gillingham Reading Specialist
+              </p>
             </div>
             <div className="flex flex-col justify-start items-start pt-2">
               <p className="font-medium">Contact:</p>
               <Link
-                href="mailto:test@example.com"
-                className="flex items-center hover:underline transition-all duration-200 font-light"
+                href="mailto:nativida@readingforwardmn.com"
+                className="flex items-center hover:underline transition-all duration-200 font-light text-sm sm:text-base text-wrap w-52 sm:w-full"
               >
-                test@example.com
+                nativida@readingforwardmn.com
                 <Mail size={25} className="pl-1" />
               </Link>
             </div>
           </div>
         </div>
         <div className="overflow-hidden w-full h-full flex flex-col items-center justify-center">
-          {/* <div className="visible sm:invisible flex flex-col justify-center items-center">
-            <MoveHorizontal size={50} strokeWidth={1} />
-            <p>Swipe for more</p>
-          </div> */}
-          <Carousel className="w-full sm:w-[90%] h-full">
+          <Carousel className="w-full sm:w-[] xl:w-[90%] h-full">
             <CarouselContent>
               {carouselCards.map((item, i) => (
                 <CarouselItem key={i}>
                   <div className="p-1">
                     <Card>
                       <CardHeader>
-                        <CardTitle className="text-4xl">{item.title}</CardTitle>
+                        <CardTitle className="text-3xl sm:text-4xl">
+                          {item.title}
+                        </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-2xl">{item.content}</p>
+                        <p className="text-lg sm:text-2xl">{item.content}</p>
                       </CardContent>
                     </Card>
                   </div>
