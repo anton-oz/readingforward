@@ -7,10 +7,10 @@
   --darker: #3a618e;
 }
 
-html {
+/* html {
   height: 100vh;
   min-height: 100vh;
-}
+} */
 
 body {
   color: var(--text-color);

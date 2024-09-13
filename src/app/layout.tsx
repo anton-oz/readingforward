@@ -31,6 +31,7 @@ export default function RootLayout({
           type="image/svg+xml"
           href="/readingforward.svg"
         />
+        <meta property="og:image" content="https://readingforwardmn.com" />
       </head>
       <body
         className={
@@ -39,7 +40,7 @@ export default function RootLayout({
         }
       >
         <Nav />
-        <main className="flex-grow h-full max-w-screen grid place-items-center items-center overflow-y-auto">
+        <main className="flex-grow max-w-screen grid place-items-center items-center overflow-y-auto">
           {children}
         </main>
         <footer className="sticky bottom-0 flex justify-end items-center p-2 border-t-2 border-t-zinc-800 bg-blue-100 text-darkerBlueski font-extralight">

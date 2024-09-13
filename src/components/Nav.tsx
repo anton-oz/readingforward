@@ -36,6 +36,7 @@ export default function Nav() {
         className={`fixed inset-x-0 top-[90px] z-[-10] bg-white shadow-lg transform transition-all duration-300 ease-in-out ${
           isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
+        onClick={() => setIsOpen(false)}
       >
         <nav>
           <ul>
