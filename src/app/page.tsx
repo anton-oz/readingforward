@@ -10,14 +10,8 @@ export default function Home() {
 
   const images = [];
 
-  const test = ["1", "2", "3", "4", "5"];
-
   for (let i = 1; i < 6; i++) {
-    if (dev) {
-      images.push(`/tutorPhotos/${i}-tutor-photo.jpg`);
-    } else {
-      images.push(`/readingforward/tutorPhotos/${i}-tutor-photo.jpg`);
-    }
+    images.push(`/tutorPhotos/${i}-tutor-photo.jpg`);
   }
 
   return (
@@ -32,23 +26,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex-1 flex bg-blue-50 w-full overflow-hidden">
-        {/* {images.map((item, i) => (
-          <div
-            className="flex-shrink-0 relative w-4/5 md:w-3/12 h-full animate-scroll"
-            key={i}
-          >
-            <Image
-              src={item}
-              fill
-              alt="placeholder image"
-              unoptimized={true}
-              className="object-contain"
-            />
-          </div>
-        ))} */}
-        {/* <div className="flex-shrink-0 w-full"> */}
         <Marquee items={images} />
-        {/* </div> */}
       </div>
     </section>
   );

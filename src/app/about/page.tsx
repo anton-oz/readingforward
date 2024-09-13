@@ -46,15 +46,21 @@ export default function AboutMe() {
             unoptimized
             className="object-cover rounded-md h-[150px] w-[150px] md:w-[200px] md:h-[200px] "
           />
-          <div className="flex flex-col justify-center items-center pt-3  text-xl">
-            Contact:
-            <Link
-              href="mailto:test@example.com"
-              className="flex items-center hover:underline hover:scale-105 transition-all duration-200"
-            >
-              test@example.com
-              <Mail size={25} className="pl-1" />
-            </Link>
+          <div className="flex flex-col justify-center items-start pt-3  text-xl">
+            <div>
+              <h2 className="text-2xl font-medium">Nativida Osland</h2>
+              <p className="font-light">Orton Gillingham Reading Specialist</p>
+            </div>
+            <div className="flex flex-col justify-start items-start pt-2">
+              <p className="font-medium">Contact:</p>
+              <Link
+                href="mailto:test@example.com"
+                className="flex items-center hover:underline transition-all duration-200 font-light"
+              >
+                test@example.com
+                <Mail size={25} className="pl-1" />
+              </Link>
+            </div>
           </div>
         </div>
         <div className="overflow-hidden w-full h-full flex flex-col items-center justify-center">
