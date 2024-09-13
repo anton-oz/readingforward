@@ -29,9 +29,12 @@ export default function RootLayout({
           rel="icon"
           sizes="any"
           type="image/svg+xml"
-          href="/readingforward.svg"
+          href="/readingforward.png"
         />
-        <meta property="og:image" content="https://readingforwardmn.com" />
+        <meta
+          property="og:image"
+          content="https://readingforwardmn.com/readingforward.png"
+        />
       </head>
       <body
         className={
