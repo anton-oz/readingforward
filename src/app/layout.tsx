@@ -11,11 +11,17 @@ const quicksand = Quicksand({
   weight: "400",
 });
 
+/* 
+
+  WAIT TO REMOVE THIS UNTIL YOU VALIDATE THAT META DESCRIPTION WORKS
+
 export const metadata: Metadata = {
   title: "Reading Forward",
   description:
     "Turning pages, igniting minds. Start your literacy journey today!",
 };
+
+*/
 
 export default function RootLayout({
   children,
@@ -34,6 +40,11 @@ export default function RootLayout({
         <meta
           property="og:image"
           content="https://readingforwardmn.com/readingforward.png"
+        />
+        <title>Reading Forward</title>
+        <meta
+          name="description"
+          content="Turning pages, igniting minds. Start your literacy journey today!"
         />
       </head>
       <body
