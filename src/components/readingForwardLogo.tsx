@@ -37,9 +37,9 @@ export default function ReadingForwardLogo() {
         className="mx-[0.4em] text-blueski"
         alt="Reading Forward logo"
       />
-      <b id="logoName" className="text-2xl grid items-center">
+      <h1 id="logoName" className="text-2xl font-bold grid items-center">
         Reading Forward
-      </b>
+      </h1>
     </div>
   );
 }
