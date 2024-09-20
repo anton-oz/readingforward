@@ -58,10 +58,10 @@ export default function AboutMe() {
             <div className="flex flex-col justify-start items-start pt-2">
               <p className="font-medium">Contact:</p>
               <Link
-                href="mailto:nativida@readingforwardmn.com"
-                className="flex items-center hover:underline transition-all duration-200 font-light text-sm sm:text-base text-wrap w-52 sm:w-full"
+                href="mailto:readingforwardmn@gmail.com"
+                className="flex items-center underline hover:font-normal transition-all duration-200 font-light text-sm sm:text-base text-wrap w-52 sm:w-full"
               >
-                nativida@readingforwardmn.com
+                readingforwardmn@gmail.com
                 <Mail size={25} className="pl-1" />
               </Link>
             </div>
