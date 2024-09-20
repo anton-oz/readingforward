@@ -55,9 +55,28 @@ export default function FaqAccordion() {
       ],
     },
     {
+      title: "Who do you work with?",
+      content: "I've worked with students from age six to thirty-nine. ",
+    },
+    {
       title: "How often and how long are sessions?",
       content:
         "Twice weekly sessions are recommended. They are 55 minutes long.",
+    },
+    {
+      title: "Where do the sessions happen?",
+      content:
+        "In-person or virtually (via Zoom). For in-home sessions, a modest fee may apply based on the distance traveled. Alternatively, with online learning, geography is no longer a limitation—you can join from anywhere!",
+    },
+    {
+      title: "If sessions are virtual, what materials are needed?",
+      content:
+        "To ensure a productive learning experience, your student will need a laptop computer (iPads/Chromebooks do not suffice) with video conferencing capabilities, a noise-canceling headset with a microphone, a stable internet connection, and a quiet, private workspace at a table or desk. Additionally, they should have paper and a dark pen on hand. ",
+    },
+    {
+      title: "What if my student is sick or has a schedule conflict?",
+      content:
+        "Life happens! If your student falls ill, please inform me promptly via text, and we'll arrange for a rescheduled session. For schedule conflicts, kindly notify me at least 24 hours in advance to reschedule. Failure to provide less than 24 hours' notice will incur a cancellation fee equivalent to the full session cost. ",
     },
     {
       title: "How much does each session cost?",
@@ -68,25 +87,6 @@ export default function FaqAccordion() {
       title: "When is payment due?",
       content:
         "Payment for sessions is due monthly, by the start date of each session. Payment methods accepted include credit card via Venmo, as well as cash or check. ",
-    },
-    {
-      title: "Where do the sessions happen?",
-      content:
-        "In-person or virtually (via Zoom). For in-home sessions, a modest fee may apply based on the distance traveled. Alternatively, with online learning, geography is no longer a limitation—you can join from anywhere!",
-    },
-    {
-      title: "If sessions are virtual, what materials are needed?",
-      content:
-        "To ensure a productive learning experience, your student will need a laptop computer (iPads do not suffice) with video conferencing capabilities, a noise-canceling headset with a microphone, a stable internet connection, and a quiet, private workspace at a table or desk. Additionally, they should have paper and a dark pen on hand. ",
-    },
-    {
-      title: "Who do you work with?",
-      content: "I've worked with students from age six to thirty-nine. ",
-    },
-    {
-      title: "What if my student is sick or has a schedule conflict?",
-      content:
-        "Life happens! If your student falls ill, please inform me promptly via text, and we'll arrange for a rescheduled session. For schedule conflicts, kindly notify me at least 24 hours in advance to reschedule. Failure to provide less than 24 hours' notice will incur a cancellation fee equivalent to the full session cost. ",
     },
   ];
 
