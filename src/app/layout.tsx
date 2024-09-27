@@ -46,6 +46,10 @@ export default function RootLayout({
           name="description"
           content="Turning pages, igniting minds. Start your literacy journey today!"
         />
+        <meta
+          name="keywords"
+          content="tutoring, orton gillingham, reading, forward, nativida, osland"
+        />
       </head>
       <body
         className={
