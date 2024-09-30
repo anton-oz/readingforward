@@ -68,7 +68,7 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="overflow-hidden w-full h-full flex flex-col items-center justify-center">
-          <Carousel className="w-full sm:w-[] xl:w-[90%] h-full">
+          <Carousel className="w-full sm:w-[] xl:w-[90%] xl:max-w-[50vw] h-full">
             <CarouselContent>
               {carouselCards.map((item, i) => (
                 <CarouselItem key={i}>
