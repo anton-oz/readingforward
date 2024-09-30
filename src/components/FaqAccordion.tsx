@@ -19,7 +19,6 @@ export default function FaqAccordion() {
     title: string;
     content: string | (string | string[])[];
   }
-
   const info: InfoObj[] = [
     {
       title: "What is Structured Literacy?",
@@ -93,10 +92,12 @@ export default function FaqAccordion() {
   return (
     <Accordion type="single" collapsible className="w-full row-start-2 p-4 ">
       {info.map((item, i) => (
-        <AccordionItem value={`item-${i}`} key={i}>
-          <AccordionTrigger className="text-4xl text-left font-normal decoration-2 pl-4 underline-offset-4">
-            {item.title}
-          </AccordionTrigger>
+        <AccordionItem id={`${item.title}`} value={`item-${i}`} key={i}>
+          <a href={`#${item.title}`}>
+            <AccordionTrigger className="text-4xl text-left font-normal decoration-2 pl-4 underline-offset-4">
+              {item.title}
+            </AccordionTrigger>
+          </a>
           <AccordionContent className="text-2xl">
             <Card className="p-4">
               <CardContent className="text-left space-y-4 p-0">
