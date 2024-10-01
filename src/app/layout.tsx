@@ -44,7 +44,7 @@ export default function RootLayout({
         <title>Reading Forward</title>
         <meta
           name="description"
-          content="Turning pages, igniting minds. Start your literacy journey today!"
+          content="Turning pages, igniting minds. Learn more about Reading Forward and Start your literacy journey today!"
         />
         <meta
           name="keywords"
