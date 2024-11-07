@@ -80,7 +80,7 @@ export default function FaqAccordion() {
     {
       title: "How much does each session cost?",
       content:
-        "Each 55-minute session is $75. This covers the lesson plans and materials, as well as the session itself with the student. All session content is customized based on the unique needs and progress of each student. Additionally, scheduling and communication with parents are included in this fee.",
+        "Each 55-minute session is $85. This covers the lesson plans and materials, as well as the session itself with the student. All session content is customized based on the unique needs and progress of each student. Additionally, scheduling and communication with parents are included in this fee.",
     },
     {
       title: "When is payment due?",
